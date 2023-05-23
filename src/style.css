@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&display=swap');
+
+:root {
+    --font: 'Fira Code', monospace;
+    --background-color: #282C33;
+    --cor-branca: #FFFFFF;
+    --cinza-input: #898989;
+    --cinza-background-input: rgba(217, 217, 217, 0.1);
+    --letra-botao: rgba(55, 55, 55, 1);
+    --background-botao: rgba(150, 235, 149, 1);
+    --cinza-background-container: rgba(255, 255, 255, 0.06);
+    --amarelo-valor-moeda: #FFE713;
+    --backgrouns-boxes: rgba(0, 0, 0, 0.2);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: var(--font);
+    font-weight: 400;
+    color: var(--cor-branca);
+}
+
+body {
+    background-color: var(--background-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 57px;
+}
+
+header {
+    width: 900px;
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    font-size: 60px;
+    margin-bottom: 28px;
+}
+
+h1 span {
+    color: #95EBA8;
+}
+
+h3 {
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+
+input, button {
+    font-size: 20px;
+    width: 171px;
+    height: 48px;
+    border-radius: 10px;
+    border: none;
+}
+
+input {
+    background-color: var(--cinza-background-input);
+    padding: 0 0 0 11px;
+}
+
+input::placeholder {
+    color: var(--cinza-input);
+    position: absolute;
+    top: 11px;
+    left: 15px;
+}
+
+button {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--letra-botao);
+    background-color: var(--background-botao);
+    cursor: pointer;
+}
+
+section {
+    background-color: var(--cinza-background-container);
+    width: 930px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+h2 {
+    margin-top: 5px;
+    font-size: 24px;
+}
+
+.container-boxes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.box-moeda {
+    display: flex;
+    align-items: center;
+    width: 170px;
+    height: 44px;
+    background-color: var(--backgrouns-boxes);
+    border-radius: 5px;
+}
+
+.logo-moeda {
+    margin: 0 6px 0 8px;
+}
+
+.tipo-moeda {
+    font-size: 16px;
+    margin-right: 34px;
+}
+
+.valor-moeda {
+    font-size: 13px;
+    color: var(--amarelo-valor-moeda);
+}
