@@ -68,7 +68,7 @@ const criaBoxes = (moeda, data) => {
 };
 
 botao.addEventListener('click', () => {
-  const moeda = input.value;
+  const moeda = input.value.toUpperCase();
   if (!moeda) {
     erroSemMoeda();
   } else {
